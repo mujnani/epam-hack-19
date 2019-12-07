@@ -10,11 +10,11 @@ import CardTabsExample from './Examples/CardTabs';
 
 const tabsContent = [
     {
-        title: 'Advanced',
+        title: 'Manual Goals',
         content: <CardTabsExample/>
     },
     {
-        title: 'Basic',
+        title: 'Life Cycle Goals',
         content: <TabsExample/>
     },
 ];
@@ -34,8 +34,8 @@ export default class TabExample extends React.Component {
         return (
             <Fragment>
                 <PageTitle
-                    heading="Tabs"
-                    subheading="Tabs are used to split content between multiple sections. Wide variety available."
+                    heading="Goals"
+                    subheading="Use our platform's intelligence to predict Goals or set up your Goals manually"
                     icon="pe-7s-drawer icon-gradient bg-happy-itmeo"
                 />
                 <Tabs tabsWrapperClass="body-tabs body-tabs-layout" transform={false} showInkBar={true} items={getTabs()}/>
