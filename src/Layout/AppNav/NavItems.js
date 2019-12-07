@@ -54,6 +54,24 @@ export const ComponentsNav = [
         ],
     },
     {
+        icon: 'pe-7s-wallet',
+        label: 'Accounts',
+        content: [
+            {
+                label: 'OnBoard Accounts',
+                to: '#/accounts/onboard',
+            },
+            {
+                label: 'Financial Footprints',
+                to: '#/accounts/financial-footprints',
+            },
+            {
+                label: 'Fin Bot',
+                to: '#/accounts/fin-bot',
+            },
+        ],
+    },
+    {
         icon: 'lnr-magic-wand',
         label: 'Goals',
         content: [

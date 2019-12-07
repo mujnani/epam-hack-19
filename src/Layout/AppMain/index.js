@@ -14,11 +14,28 @@ const Charts = lazy(() => import('../../DemoPages/Charts'));
 const Forms = lazy(() => import('../../DemoPages/Forms'));
 const Tables = lazy(() => import('../../DemoPages/Tables'));
 
+// Accounts pages
+const Accounts = lazy(() => import('../../pages/Accounts'));
+// Auth pages
+const Auth = lazy(() => import('../../pages/Auth'));
+
 const AppMain = () => {
 
     return (
         <Fragment>
 
+            {/* Auth */}
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-3">
+                        Please Wait ! We are Loading it for you.
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/auth" component={Auth}/>
+            </Suspense>
             {/* Components */}
 
             <Suspense fallback={
@@ -86,6 +103,19 @@ const AppMain = () => {
                 </div>
             }>
                 <Route path="/elements" component={Elements}/>
+            </Suspense>
+            {/* Accounts */}
+
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-3">
+                        Please Wait ! We are Loading it for you.
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/accounts" component={Accounts}/>
             </Suspense>
 
             {/* Dashboard Widgets */}
