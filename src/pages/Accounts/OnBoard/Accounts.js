@@ -47,7 +47,7 @@ class Accounts extends Component {
   render() {
     const { user, accounts } = this.props;
     const { transactions, transactionsLoading } = this.props.plaid;
-    console.log(accounts)
+
     let accountItems = accounts.map(account => (
       <li key={account._id} style={{ marginTop: "1rem" }}>
         <button

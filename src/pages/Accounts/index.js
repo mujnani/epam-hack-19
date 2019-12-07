@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import {Route} from 'react-router-dom';
 
 import OnBoard from './OnBoard/';
+import FinBot from './FinBot/';
 
 // Layout
 import AppHeader from '../../Layout/AppHeader/';
@@ -17,7 +18,7 @@ const Elements = ({match}) => (
                 <div className="app-main__inner">
                     <Route path={`${match.url}/onboard`} component={OnBoard}/>
                     <Route path={`${match.url}/financial-footprints`} component={OnBoard}/>
-                    <Route path={`${match.url}/fin-bot`} component={OnBoard}/>
+                    <Route path={`${match.url}/fin-bot`} component={FinBot}/>
                 </div>
                 <AppFooter/>
             </div>
