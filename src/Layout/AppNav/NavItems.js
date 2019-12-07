@@ -78,7 +78,7 @@ export const ComponentsNav = [
             //     to: '#/components/tooltips-popovers',
             // },
             {
-                label: 'Impersonization',
+                label: 'Impersonalization',
                 to: '#/components/carousel',
             },
         ],
@@ -104,6 +104,8 @@ export const FormsNavTemp = [
         to: '#/forms/validation',
     },
 ];
+
+// for category ?
 export const WidgetsNav = [
     {
         icon: 'pe-7s-graph1',

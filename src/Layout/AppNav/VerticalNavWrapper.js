@@ -27,14 +27,12 @@ class Nav extends Component {
                 <h5 className="app-sidebar__heading">User Operation</h5>
                 <MetisMenu content={ComponentsNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
                 <h5 className="app-sidebar__heading">Analytics</h5>
-                <MetisMenu content={WidgetsNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+                <MetisMenu content={ChartsNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
                 <h5 className="app-sidebar__heading">About Us</h5>
                 <MetisMenu content={FormsNavTemp} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
                 <h5 className="app-sidebar__heading">Contact Us</h5>
                 <MetisMenu content={FormsNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
-                <h5 className="app-sidebar__heading">Analytics</h5>
-                <MetisMenu content={ChartsNav} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
-            </Fragment>
+                </Fragment>
         );
     }
 

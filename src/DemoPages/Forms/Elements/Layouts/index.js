@@ -11,7 +11,7 @@ import FormGridFormRow from './Examples/FormGridFormRow';
 
 const tabsContent = [
     {
-        title: 'Our Work ',
+        title: 'Our Model ',
         content: <FormGridFormRow/>
     },
     {
