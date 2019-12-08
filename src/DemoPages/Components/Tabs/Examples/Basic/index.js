@@ -2,6 +2,8 @@ import React, {Fragment} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classnames from 'classnames';
 
+import { Link } from "react-router-dom";
+
 import {
     TabContent, TabPane, Nav, NavItem, NavLink,
     Row, Col,
@@ -53,7 +55,9 @@ export default class TabsExample extends React.Component {
                                 <CardTitle>Repay your University Debt</CardTitle>
                                 <p>You have XXX RMB university loan from Citi Bank.</p>
                                 <p>Clear your debts and improve your Financial Health.</p>
-                                <Button color="primary">Talk to Fin Bot</Button>
+                                <Link to="/accounts/fin-bot">
+                                    <Button color="primary">Talk to Fin Bot</Button>
+                                </Link>
                             </CardBody>
                             <CardFooter>High</CardFooter>
                         </Card>
@@ -63,7 +67,9 @@ export default class TabsExample extends React.Component {
                                 <CardTitle>Start saving for your Marriage expenses</CardTitle>
                                 <p>Persons of your age group prefer a saving plan for their upcoming marriages.</p>
                                 <p>Plan ahead and gain your Financial Freedom.</p>
-                                <Button color="primary">Talk to Fin Bot</Button>
+                                <Link to="/accounts/fin-bot">
+                                    <Button color="primary">Talk to Fin Bot</Button>
+                                </Link>
                             </CardBody>
                             <CardFooter>Low</CardFooter>
                         </Card>
@@ -75,7 +81,9 @@ export default class TabsExample extends React.Component {
                                 <CardTitle>Time to Build your House/Apartment</CardTitle>
                                 <p>You have XXX RMB surplus in your HSBC Bank.Usually people in your age group start investing in  house</p>
                                 <p>Use money to create money through intelligent investments.</p>
-                                <Button color="primary">Talk to Fin Bot</Button>
+                                <Link to="/accounts/fin-bot">
+                                    <Button color="primary">Talk to Fin Bot</Button>
+                                </Link>
                             </CardBody>
                             <CardFooter>Average</CardFooter>
                         </Card>
@@ -85,7 +93,9 @@ export default class TabsExample extends React.Component {
                                 <CardTitle>Use our Intellginece to save for your next vaccation</CardTitle>
                                 <p>Usually people of age group spent  20,000 RMB on vaccations.</p>
                                 <p>Plan now and enjoy stressful vaccations.</p>
-                                <Button color="primary">Talk to Fin Bot</Button>
+                                <Link to="/accounts/fin-bot">
+                                    <Button color="primary">Talk to Fin Bot</Button>
+                                </Link>
                             </CardBody>
                             <CardFooter>High</CardFooter>
                         </Card>
