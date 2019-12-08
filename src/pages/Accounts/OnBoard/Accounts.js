@@ -96,7 +96,7 @@ class Accounts extends Component {
           <PlaidLinkButton
             buttonProps={{
               className:
-                "btn btn-large waves-effect waves-light hoverable blue accent-3 main-btn"
+              "btn btn-large main-btn primary"
             }}
             plaidLinkProps={{
               clientName: "Test",

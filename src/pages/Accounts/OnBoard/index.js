@@ -32,6 +32,9 @@ class Dashboard extends Component {
   render() {
     const { user } = this.props.auths;
     const { accounts, accountsLoading } = this.props.accounts;
+    const btnStyle = {
+      color: '#fff'
+    };
 
     let dashboardContent;
 
@@ -55,7 +58,7 @@ class Dashboard extends Component {
               <PlaidLinkButton
                 buttonProps={{
                   className:
-                    "btn btn-large waves-effect waves-light hoverable blue accent-3 main-btn"
+                    "btn btn-large main-btn primary"
                 }}
                 plaidLinkProps={{
                   clientName: "Test",
