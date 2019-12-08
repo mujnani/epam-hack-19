@@ -26,7 +26,7 @@ class Landing extends Component {
             />
             <h4 className="flow-text">
               <b>We</b> are just not other banking platform, {" "}
-              <span style={{ fontFamily: "monospace" }}>We help to CASH your goals</span>
+              <span style={{ fontFamily: "monospace" }}>We build an intelligence to CASH your goals</span>
             </h4>
             <br />
             <div className="col s6" style={{display: 'flex', justifyContent: 'center' }}>
