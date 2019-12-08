@@ -25,6 +25,14 @@ export default class ChartJsCircular extends React.Component {
                     transitionEnter={false}
                     transitionLeave={false}>
                     <Row>
+                    <Col lg="12">
+                            <Card className="main-card mb-3">
+                                <CardBody>
+                                    <CardTitle>Your Current Financial Status: Green</CardTitle>
+                                    <PieExample/>
+                                </CardBody>
+                            </Card>
+                        </Col>
                         <Col lg="6">
                             <Card className="main-card mb-3">
                                 <CardBody>
@@ -38,14 +46,6 @@ export default class ChartJsCircular extends React.Component {
                                 <CardBody>
                                     <CardTitle>Expenses By Month</CardTitle>
                                     <LineExample2/>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col lg="6">
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Your Current Financial Status: Green</CardTitle>
-                                    <PieExample/>
                                 </CardBody>
                             </Card>
                         </Col>

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import {
     TabContent, TabPane, Nav, NavItem, NavLink,
     Row, Col,
-    Card, CardBody, CardHeader,
+    Card, CardBody, CardHeader,CardFooter,
     CardTitle, Button, ButtonGroup
 } from 'reactstrap';
 
@@ -38,360 +38,61 @@ export default class TabsExample extends React.Component {
 
         return (
             <Fragment>
-                <ReactCSSTransitionGroup
-                    component="div"
-                    transitionName="TabsAnimation"
-                    transitionAppear={true}
-                    transitionAppearTimeout={0}
-                    transitionEnter={false}
-                    transitionLeave={false}>
-                    <Row>
-                        <Col md="6">
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Basic</CardTitle>
-                                    <Nav tabs="true">
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '1'})}
-                                                     onClick={() => {
-                                                         this.toggle('1');
-                                                     }}
-                                            >
-                                                Tab 1
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '2'})}
-                                                     onClick={() => {
-                                                         this.toggle('2');
-                                                     }}
-                                            >
-                                                Tab 2
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '3'})}
-                                                     onClick={() => {
-                                                         this.toggle('3');
-                                                     }}
-                                            >
-                                                Tab 3
-                                            </NavLink>
-                                        </NavItem>
-                                    </Nav>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Justified Alignment</CardTitle>
-                                    <Nav tabs="true" justified>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '1'})}
-                                                     onClick={() => {
-                                                         this.toggle('1');
-                                                     }}
-                                            >
-                                                Tab 1
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '2'})}
-                                                     onClick={() => {
-                                                         this.toggle('2');
-                                                     }}
-                                            >
-                                                Tab 2
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '3'})}
-                                                     onClick={() => {
-                                                         this.toggle('3');
-                                                     }}
-                                            >
-                                                Tab 3
-                                            </NavLink>
-                                        </NavItem>
-                                    </Nav>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Tabs Variations</CardTitle>
-                                    <div className="mb-3" tabs="true">
-                                        <ButtonGroup size="sm">
-                                            <Button caret="true" color="warning"
-                                                    className={"btn-pill pl-3 " + classnames({active: this.state.activeTab === '1'})}
-                                                    onClick={() => {
-                                                        this.toggle('1');
-                                                    }}
-                                            >Tab 1</Button>
-                                            <Button color="warning"
-                                                    className={classnames({active: this.state.activeTab === '2'})}
-                                                    onClick={() => {
-                                                        this.toggle('2');
-                                                    }}
-                                            >Tab 2</Button>
-                                            <Button color="warning"
-                                                    className={"btn-pill pr-3 " + classnames({active: this.state.activeTab === '3'})}
-                                                    onClick={() => {
-                                                        this.toggle('3');
-                                                    }}
-                                            >Tab 3</Button>
-                                        </ButtonGroup>
-                                    </div>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col md="6">
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Pills</CardTitle>
-                                    <Nav pills>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '1'})}
-                                                     onClick={() => {
-                                                         this.toggle('1');
-                                                     }}
-                                            >
-                                                Pill 1
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '2'})}
-                                                     onClick={() => {
-                                                         this.toggle('2');
-                                                     }}
-                                            >
-                                                Pill 2
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '3'})}
-                                                     onClick={() => {
-                                                         this.toggle('3');
-                                                     }}
-                                            >
-                                                Pill 3
-                                            </NavLink>
-                                        </NavItem>
-                                    </Nav>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Pills</CardTitle>
-                                    <Nav pills fill>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '1'})}
-                                                     onClick={() => {
-                                                         this.toggle('1');
-                                                     }}
-                                            >
-                                                Pill 1
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '2'})}
-                                                     onClick={() => {
-                                                         this.toggle('2');
-                                                     }}
-                                            >
-                                                Pill 2
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="javascript:void(0);"
-                                                     className={classnames({active: this.state.activeTab === '3'})}
-                                                     onClick={() => {
-                                                         this.toggle('3');
-                                                     }}
-                                            >
-                                                Pill 3
-                                            </NavLink>
-                                        </NavItem>
-                                    </Nav>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                            <Card className="main-card mb-3">
-                                <CardBody>
-                                    <CardTitle>Button Group Tabs</CardTitle>
-                                    <div className="mb-3 text-center">
-                                        <ButtonGroup size="sm">
-                                            <Button caret="true" color="primary"
-                                                    className={"btn-shadow " + classnames({active: this.state.activeTab === '1'})}
-                                                    onClick={() => {
-                                                        this.toggle('1');
-                                                    }}
-                                            >Tab 1</Button>
-                                            <Button color="primary"
-                                                    className={"btn-shadow " + classnames({active: this.state.activeTab === '2'})}
-                                                    onClick={() => {
-                                                        this.toggle('2');
-                                                    }}
-                                            >Tab 2</Button>
-                                            <Button color="primary"
-                                                    className={"btn-shadow " + classnames({active: this.state.activeTab === '3'})}
-                                                    onClick={() => {
-                                                        this.toggle('3');
-                                                    }}
-                                            >Tab 3</Button>
-                                        </ButtonGroup>
-                                    </div>
-                                    <TabContent activeTab={this.state.activeTab}>
-                                        <TabPane tabId="1">
-                                            <p>It was popularised in the 1960s with the release of Letraset sheets
-                                                containing Lorem Ipsum passages, and more recently with desktop
-                                                publishing software like Aldus PageMaker including versions of Lorem
-                                                Ipsum.</p>
-                                        </TabPane>
-                                        <TabPane tabId="2">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                        <TabPane tabId="3">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book. It has survived not only five centuries, but
-                                                also the leap into electronic typesetting, remaining essentially
-                                                unchanged. </p>
-                                        </TabPane>
-                                    </TabContent>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
-                </ReactCSSTransitionGroup>
-            </Fragment>
+            <ReactCSSTransitionGroup
+                component="div"
+                transitionName="TabsAnimation"
+                transitionAppear={true}
+                transitionAppearTimeout={0}
+                transitionEnter={false}
+                transitionLeave={false}>
+                <Row>
+                    <Col md="4">
+                        <Card className="main-card mb-3">
+                            <CardHeader>University Debt</CardHeader>
+                            <CardBody>
+                                <CardTitle>Repay your University Debt</CardTitle>
+                                <p>You have XXX RMB university loan from Citi Bank.</p>
+                                <p>Clear your debts and improve your Financial Health.</p>
+                                <Button color="primary">Talk to Fin Bot</Button>
+                            </CardBody>
+                            <CardFooter>High</CardFooter>
+                        </Card>
+                        <Card className="main-card mb-3">
+                            <CardHeader>Marriage Expense Planning</CardHeader>
+                            <CardBody>
+                                <CardTitle>Start saving for your Marriage expenses</CardTitle>
+                                <p>Persons of your age group prefer a saving plan for their upcoming marriages.</p>
+                                <p>Plan ahead and gain your Financial Freedom.</p>
+                                <Button color="primary">Talk to Fin Bot</Button>
+                            </CardBody>
+                            <CardFooter>Low</CardFooter>
+                        </Card>
+                    </Col>
+                    <Col md="4">
+                        <Card className="main-card mb-3">
+                            <CardHeader>Financial House</CardHeader>
+                            <CardBody>
+                                <CardTitle>Time to Build your House/Apartment</CardTitle>
+                                <p>You have XXX RMB surplus in your HSBC Bank.Usually people in your age group start investing in  house</p>
+                                <p>Use money to create money through intelligent investments.</p>
+                                <Button color="primary">Talk to Fin Bot</Button>
+                            </CardBody>
+                            <CardFooter>Average</CardFooter>
+                        </Card>
+                        <Card className="main-card mb-3">
+                            <CardHeader>Vaccation Planning</CardHeader>
+                            <CardBody>
+                                <CardTitle>Use our Intellginece to save for your next vaccation</CardTitle>
+                                <p>Usually people of age group spent  20,000 RMB on vaccations.</p>
+                                <p>Plan now and enjoy stressful vaccations.</p>
+                                <Button color="primary">Talk to Fin Bot</Button>
+                            </CardBody>
+                            <CardFooter>High</CardFooter>
+                        </Card>
+                    </Col>
+                </Row>
+            </ReactCSSTransitionGroup>
+        </Fragment>
         );
     }
 }

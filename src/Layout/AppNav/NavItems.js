@@ -61,10 +61,10 @@ export const ComponentsNav = [
                 label: 'Goals',
                 to: '#/components/tabs',
             },
-            {
-                label: 'Life Cycle Needs',
-                to: '#/components/notifications',
-            },
+            // {
+            //     label: 'Life Cycle Needs',
+            //     to: '#/components/notifications',
+            // },
             // {
             //     label: 'Modals',
             //     to: '#/components/modals',
@@ -116,7 +116,7 @@ export const WidgetsNav = [
 export const ChartsNav = [
     {
         icon: 'pe-7s-graph1',
-        label: 'Analytics',
+        label: 'Current Financial Health',
         to: '#/charts/chartjs',
     },
 ];
