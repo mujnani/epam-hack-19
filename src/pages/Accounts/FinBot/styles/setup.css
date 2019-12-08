@@ -2,7 +2,6 @@
 .bubble-container {
 	display: flex;
 	flex-direction: column;
-	background: #dcdde0;
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;

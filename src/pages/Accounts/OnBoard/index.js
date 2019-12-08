@@ -6,7 +6,7 @@ import { logoutUser } from '../../../actions/auths';
 import { getAccounts, addAccount } from '../../../actions/accounts';
 
 import Accounts from "./Accounts";
-// import Spinner from "./Spinner";
+import Spinner from "./Spinner";
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -36,7 +36,7 @@ class Dashboard extends Component {
     let dashboardContent;
 
     if (accounts === null || accountsLoading) {
-      // dashboardContent = <Spinner />;
+      dashboardContent = <Spinner />;
     } else if (accounts.length > 0) {
       // User has accounts linked
       dashboardContent = <Accounts user={user} accounts={accounts} />;
@@ -69,12 +69,6 @@ class Dashboard extends Component {
                 Link Account
               </PlaidLinkButton>
             </div>
-            <button
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable red accent-3 main-btn"
-            >
-              Logout
-            </button>
           </div>
         </div>
       );

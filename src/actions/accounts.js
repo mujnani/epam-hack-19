@@ -21,7 +21,10 @@ export const addAccount = plaidData => dispatch => {
       })
     )
     .then(data =>
-      accounts ? dispatch(getTransactions(accounts.concat(data.payload))) : null
+      {
+        accounts ? dispatch(getTransactions(accounts.concat(data.payload))) : null
+        dispatch(getAccounts())
+    }
     )
     .catch(err => console.log(err));
 };
@@ -41,7 +44,10 @@ export const deleteAccount = plaidData => dispatch => {
           payload: id
         })
       )
-      .then(newAccounts ? dispatch(getTransactions(newAccounts)) : null)
+      .then(() => {
+        newAccounts ? dispatch(getTransactions(newAccounts)) : null
+        dispatch(getAccounts())
+      })
       .catch(err => console.log(err));
   }
 };

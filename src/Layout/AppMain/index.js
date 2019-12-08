@@ -18,12 +18,26 @@ const Tables = lazy(() => import('../../DemoPages/Tables'));
 const Accounts = lazy(() => import('../../pages/Accounts'));
 // Auth pages
 const Auth = lazy(() => import('../../pages/Auth'));
+// Landing pages
+const Landing = lazy(() => import('../../pages/Landing'));
 
 const AppMain = () => {
 
     return (
         <Fragment>
 
+            {/* Landing */}
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-3">
+                        Please Wait ! We are Loading it for you.
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/landing" component={Landing}/>
+            </Suspense>
             {/* Auth */}
             <Suspense fallback={
                 <div className="loader-container">
@@ -147,7 +161,7 @@ const AppMain = () => {
             </Suspense>
 
             <Route exact path="/" render={() => (
-                <Redirect to="/dashboards/basic"/>
+                <Redirect to="/landing"/>
             )}/>
             <ToastContainer/>
         </Fragment>
