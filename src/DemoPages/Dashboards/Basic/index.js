@@ -1,6 +1,10 @@
 import React, {Component, Fragment} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {Route} from 'react-router-dom';
 import classnames from 'classnames';
+
+// const Tables = lazy(() => import('../../Tables'));
+import DropdownExamples from '../../Elements/Dropdowns';
 
 import {
     Row, Col,
@@ -555,7 +559,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                     ￥5.8K
                                                 </div>
                                                 <div className="widget-subheading">
-                                                    Wells Fargo
+                                                    CMB
                                                 </div>
                                                 {/* <div className="widget-description">
                                                     <FontAwesomeIcon className="text-white opacity-5" icon={faAngleUp}/>
@@ -738,7 +742,9 @@ export default class AnalyticsDashboard1 extends Component {
                                                     <div className="badge badge-warning">Pending</div>
                                                 </td> */}
                                                 <td className="text-center">
-                                                    <button type="button" className="btn btn-primary btn-sm">Details</button>
+                                                    <Route path={`elements/dropdowns`} component={DropdownExamples}/>
+                                                    {/* <Route path="/tables" component={Tables}/> */}
+                                                    {/* <button type="button" className="btn btn-primary btn-sm">Details</button> */}
                                                 </td>
                                             </tr>
                                             <tr>
