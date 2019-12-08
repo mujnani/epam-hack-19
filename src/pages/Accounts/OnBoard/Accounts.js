@@ -96,7 +96,7 @@ class Accounts extends Component {
             <b>Welcome!</b>
           </h4>
           <p className="grey-text text-darken-1">
-            Hey there, {user.name.split(" ")[0]}
+            Hey there, {user.name && user.name.split(" ")[0]}
           </p>
           <h5>
             <b>Linked Accounts</b>
