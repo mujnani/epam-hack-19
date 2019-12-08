@@ -21,8 +21,6 @@ export default class FormGridFormRow extends React.Component {
                     transitionLeave={false}>
                     <Card className="main-card mb-3">
                         <CardBody>
-                            <CardTitle>Automated1 Platform</CardTitle>
-
                             <img src={aboutUS} alt="about-us"/>
 
 
