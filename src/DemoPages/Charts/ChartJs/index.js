@@ -10,7 +10,7 @@ import ChartJsLinesBars from './Examples/LinesBars';
 
 const tabsContent = [
     {
-        title: 'Graphical Representation',
+        title: 'Financial Health',
         content: <ChartJsCircular/>
     },
     // {

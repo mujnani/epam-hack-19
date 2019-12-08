@@ -35,7 +35,7 @@ export default class TabExample extends React.Component {
             <Fragment>
                 <PageTitle
                     heading="Goals"
-                    subheading="Use our platform's intelligence to predict Goals or set up your Goals manually"
+                    subheading="Use our platform's intelligence to predict Goals OR set up your Goals manually"
                     icon="pe-7s-drawer icon-gradient bg-happy-itmeo"
                 />
                 <Tabs tabsWrapperClass="body-tabs body-tabs-layout" transform={false} showInkBar={true} items={getTabs()}/>

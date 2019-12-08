@@ -1433,7 +1433,7 @@ pre {
   .table th,
   .table td {
     padding: 0.55rem;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: 1px solid #e9ecef; }
   .table thead th {
     vertical-align: bottom;
@@ -8042,7 +8042,11 @@ button,
 .app-header.header-text-light .search-wrapper .input-holder .search-icon span::before {
   background: rgba(255, 255, 255, 0.8); }
 .app-header.header-text-light .app-header__logo .logo-src {
-  background: url("~assets/utils/images/logo.png"); }
+  background: url("~assets/utils/images/logo.png");
+  background-size: cover;
+  height: 45px;
+  width: 66px;
+}
 .app-header.header-text-light .app-header__mobile-menu .hamburger-inner,
 .app-header.header-text-light .app-header__mobile-menu .hamburger-inner::before,
 .app-header.header-text-light .app-header__mobile-menu .hamburger-inner::after {
