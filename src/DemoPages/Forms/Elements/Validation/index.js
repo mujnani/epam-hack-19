@@ -10,7 +10,7 @@ import FormsFeedback from './Examples/Feedback';
 
 const tabsContent = [
     {
-        title: 'Details',
+        title: 'Please fill form below',
         content: <FormsFeedback/>
     },
 

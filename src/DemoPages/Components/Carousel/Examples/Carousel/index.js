@@ -21,18 +21,18 @@ const CarouselBSExample = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
                 <Row className="slick-slider-md">
-                    <Col lg="6">
+                    {/* <Col lg="6">
                         <Card className="main-card mb-3">
                             <CardBody>
                                 <CardTitle>Basic</CardTitle>
                                 <CarouselDefault/>
                             </CardBody>
                         </Card>
-                    </Col>
+                    </Col> */}
                     <Col lg="6">
                         <Card className="main-card mb-3">
                             <CardBody>
-                                <CardTitle>Custom Tags</CardTitle>
+                                <CardTitle>Life Cycle Needs</CardTitle>
                                 <CustomExample/>
                             </CardBody>
                         </Card>
