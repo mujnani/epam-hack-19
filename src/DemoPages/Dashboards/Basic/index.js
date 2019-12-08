@@ -36,15 +36,10 @@ import {
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import avatar1 from '../../../assets/utils/images/avatars/1.jpg';
-import avatar2 from '../../../assets/utils/images/avatars/2.jpg';
-import avatar3 from '../../../assets/utils/images/avatars/3.jpg';
-import avatar4 from '../../../assets/utils/images/avatars/4.jpg';
-
-import bankLogo1 from '../../../assets/utils/images/banks/CMB.png';
-import bankLogo2 from '../../../assets/utils/images/banks/CGB.png';
-import bankLogo3 from '../../../assets/utils/images/banks/ICBC.png';
-import bankLogo4 from '../../../assets/utils/images/banks/CIB.png';
+import bankLogo1 from '../../../assets/utils/images/banks/citi_logo.png';
+import bankLogo2 from '../../../assets/utils/images/banks/hsbc_logo.png';
+import bankLogo3 from '../../../assets/utils/images/banks/chase_logo.png';
+import bankLogo4 from '../../../assets/utils/images/banks/cmb_logo.png';
 
 const data = [
     {name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
@@ -114,8 +109,8 @@ export default class AnalyticsDashboard1 extends Component {
                     transitionLeave={false}>
                     <div>
                         <PageTitle
-                            heading="Snapshot of your Assests"
-                            subheading="This is an example dashboard created using build-in elements and components."
+                            heading="Global Assests"
+                            subheading="Your entire financial assests at a single intelligent dashboard."
                         />
                         <Row>
                             {/* <Col md="12" lg="6">
@@ -453,7 +448,7 @@ export default class AnalyticsDashboard1 extends Component {
                             <Col md="12" lg="12">
                                 <Row>
                                     <Col md="3">
-                                        <div className="card mb-3 bg-arielle-smile widget-chart text-white card-border">
+                                        <div className="card mb-3 bg-midnight-bloom widget-chart text-white card-border">
                                             <div className="widget-chart-content text-white">
                                                 <div className="icon-wrapper rounded">
                                                     {/* <div className="icon-wrapper-bg bg-white opacity-10"/>
@@ -463,10 +458,10 @@ export default class AnalyticsDashboard1 extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="widget-numbers">
-                                                    87,4
+                                                    ￥87.4K
                                                 </div>
                                                 <div className="widget-subheading">
-                                                    Reports Generated
+                                                    Citi
                                                 </div>
                                                 {/* <div className="widget-description text-white">
                                                     <FontAwesomeIcon icon={faAngleUp}/>
@@ -495,10 +490,10 @@ export default class AnalyticsDashboard1 extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="widget-numbers">
-                                                    17.2k
+                                                    ￥17.7K
                                                 </div>
                                                 <div className="widget-subheading">
-                                                    Profiles
+                                                    HSBC
                                                 </div>
                                                 {/* <div className="widget-description text-white">
                                                     <span className="pr-1">62,7%</span>
@@ -516,7 +511,7 @@ export default class AnalyticsDashboard1 extends Component {
                                         </div>
                                     </Col>
                                     <Col md="3">
-                                        <div className="card mb-3 bg-grow-early widget-chart text-white card-border">
+                                        <div className="card mb-3 bg-midnight-bloom widget-chart text-white card-border">
                                             <div className="widget-chart-content text-white">
                                                 <div className="icon-wrapper rounded">
                                                     {/* <div className="icon-wrapper-bg bg-dark opacity-9"/>
@@ -526,10 +521,10 @@ export default class AnalyticsDashboard1 extends Component {
                                                     </div>
                                                 </div>
                                                 <div className="widget-numbers">
-                                                    63.2k
+                                                    ￥3.2K
                                                 </div>
                                                 <div className="widget-subheading">
-                                                    Bugs Fixed
+                                                    Chase
                                                 </div>
                                                 {/* <div className="widget-description text-white">
                                                     <FontAwesomeIcon icon={faArrowRight}/>
@@ -546,7 +541,7 @@ export default class AnalyticsDashboard1 extends Component {
                                         </div>
                                     </Col>
                                     <Col md="3">
-                                        <div className="card mb-3 bg-love-kiss widget-chart card-border">
+                                        <div className="card mb-3 bg-midnight-bloom widget-chart card-border">
                                             <div className="widget-chart-content text-white">
                                                 <div className="icon-wrapper rounded">
                                                     {/* <div className="icon-wrapper-bg bg-white opacity-4"/>
@@ -554,12 +549,13 @@ export default class AnalyticsDashboard1 extends Component {
                                                     <div className="icon-wrapper-bg bg-white opacity-10 pt-2">
                                                         <img width={40} className="rounded" src={bankLogo4} alt=""/>
                                                     </div>
+                                                    {/* <img width={54} className="rounded" src={bankLogo4} alt=""/> */}
                                                 </div>
                                                 <div className="widget-numbers">
-                                                    45.8k
+                                                    ￥5.8K
                                                 </div>
                                                 <div className="widget-subheading">
-                                                    Total Views
+                                                    Wells Fargo
                                                 </div>
                                                 {/* <div className="widget-description">
                                                     <FontAwesomeIcon className="text-white opacity-5" icon={faAngleUp}/>
@@ -737,7 +733,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$810.89</td>
+                                                <td className="text-right">￥1810.89</td>
                                                 {/* <td className="text-center">
                                                     <div className="badge badge-warning">Pending</div>
                                                 </td> */}
@@ -763,7 +759,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$607.65</td>
+                                                <td className="text-right">￥607.65</td>
                                                 {/* <td className="text-center">
                                                     <div className="badge badge-success">Completed</div>
                                                 </td> */}
@@ -789,7 +785,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$589.42</td>
+                                                <td className="text-right">￥589.42</td>
                                                 {/* <td className="text-center">
                                                     <div className="badge badge-danger">In Progress</div>
                                                 </td> */}
@@ -814,7 +810,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$525</td>
+                                                <td className="text-right">￥3525.58</td>
                                                 {/* <td className="text-center">
                                                     <div className="badge badge-info">On Hold</div>
                                                 </td> */}
@@ -838,7 +834,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$483.96</td>
+                                                <td className="text-right">￥483.96</td>
                                                 <td className="text-center">
                                                     <button type="button" className="btn btn-primary btn-sm">Details</button>
                                                 </td>
@@ -859,7 +855,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$480</td>
+                                                <td className="text-right">￥2480</td>
                                                 <td className="text-center">
                                                     <button type="button" className="btn btn-primary btn-sm">Details</button>
                                                 </td>
@@ -880,7 +876,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="text-right">$367.68</td>
+                                                <td className="text-right">￥1367.68</td>
                                                 <td className="text-center">
                                                     <button type="button" className="btn btn-primary btn-sm">Details</button>
                                                 </td>
