@@ -119,7 +119,7 @@ const conversation = {
   },
   'start': {
     says: [
-      "success!here is your new account : <a href=' '> new account </a >"
+      "success!here is your new account : <a href='#/elements/dropdowns'> new account </a >"
     ],
     reply: [
       {
