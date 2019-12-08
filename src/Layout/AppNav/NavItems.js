@@ -12,58 +12,11 @@ export const ComponentsNav = [
         content: [
             {
                 label: 'OnBoard Accounts',
-                to: '#/elements/buttons-standard',
-            },
-            {
-                label: 'Financial Footprints',
-                to: '#/components/maps',
-            },
-            {
-                label: 'Fin Bot',
-                to: '#/components/maps',
-            },
-            // { http://localhost:3001/#/elements/cards
-            //     label: 'Dropdowns',
-            //     to: '#/elements/dropdowns',
-
-            // },
-            // {
-            //     label: 'Icons',
-            //     to: '#/elements/icons',
-            // },
-            // {
-            //     label: 'Badges',
-            //     to: '#/elements/badges-labels',
-            // },
-            // {
-            //     label: 'Cards',
-            //     to: '#/elements/cards',
-            // },
-            // {
-            //     label: 'List Groups',
-            //     to: '#/elements/list-group',
-            // },
-            // {
-            //     label: 'Navigation Menus',
-            //     to: '#/elements/navigation',
-            // },
-            // { http://localhost:3001/#/elements/utilities
-            //     label: 'For Ani Ref',
-            //     to: '#/elements/utilities',
-            // },
-        ],
-    },
-    {
-        icon: 'pe-7s-wallet',
-        label: 'Accounts',
-        content: [
-            {
-                label: 'OnBoard Accounts',
                 to: '#/accounts/onboard',
             },
             {
                 label: 'Financial Footprints',
-                to: '#/accounts/financial-footprints',
+                to: '#/components/maps',
             },
             {
                 label: 'Fin Bot',

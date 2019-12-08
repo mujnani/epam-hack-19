@@ -1,12 +1,9 @@
 /* setup container styles */
 .bubble-container {
-	position: fixed;
-	right: 0;
 	display: flex;
 	flex-direction: column;
 	background: #dcdde0;
-	height: 100vh;
-	max-width: 750px;
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
