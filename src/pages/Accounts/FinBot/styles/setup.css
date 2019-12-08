@@ -1,0 +1,27 @@
+/* setup container styles */
+.bubble-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.bubble-wrap {
+	flex: 1;
+	padding: 10px 30px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+/* optional page styles */
+h1 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 4em;
+	margin: .5em auto 0.15em;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0;
+}
