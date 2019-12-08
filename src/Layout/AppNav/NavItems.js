@@ -12,7 +12,7 @@ export const ComponentsNav = [
         content: [
             {
                 label: 'OnBoard Accounts',
-                to: '#/elements/buttons-standard',
+                to: '#/accounts/onboard',
             },
             {
                 label: 'Financial Footprints',
@@ -20,37 +20,8 @@ export const ComponentsNav = [
             },
             {
                 label: 'Fin Bot',
-                to: '#/components/maps',
+                to: '#/accounts/fin-bot',
             },
-            // { http://localhost:3001/#/elements/cards
-            //     label: 'Dropdowns',
-            //     to: '#/elements/dropdowns',
-
-            // },
-            // {
-            //     label: 'Icons',
-            //     to: '#/elements/icons',
-            // },
-            // {
-            //     label: 'Badges',
-            //     to: '#/elements/badges-labels',
-            // },
-            // {
-            //     label: 'Cards',
-            //     to: '#/elements/cards',
-            // },
-            // {
-            //     label: 'List Groups',
-            //     to: '#/elements/list-group',
-            // },
-            // {
-            //     label: 'Navigation Menus',
-            //     to: '#/elements/navigation',
-            // },
-            // { http://localhost:3001/#/elements/utilities
-            //     label: 'For Ani Ref',
-            //     to: '#/elements/utilities',
-            // },
         ],
     },
     {
