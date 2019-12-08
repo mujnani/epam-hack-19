@@ -61,7 +61,7 @@ export default class TabsExample extends React.Component {
                             <CardHeader>Marriage Expense Planning</CardHeader>
                             <CardBody>
                                 <CardTitle>Start saving for your Marriage expenses</CardTitle>
-                                <p>Persons of your age group prefer a saving plan for their upcoming marriages.</p>
+                                <p>Persons of your age group prefer a saving plan for their upcoming marriage.</p>
                                 <p>Plan ahead and gain your Financial Freedom.</p>
                                 <Button color="primary">Talk to Fin Bot</Button>
                             </CardBody>

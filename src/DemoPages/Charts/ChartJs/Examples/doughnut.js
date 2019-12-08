@@ -8,7 +8,7 @@ const data = {
         'Debts'
     ],
     datasets: [{
-        data: [300, 50, 100],
+        data: [300, 100, 50],
         backgroundColor: [
             '#8dace7',
             '#71deb9',

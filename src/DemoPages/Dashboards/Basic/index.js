@@ -109,7 +109,7 @@ export default class AnalyticsDashboard1 extends Component {
                     transitionLeave={false}>
                     <div>
                         <PageTitle
-                            heading="Global Assests"
+                            heading="Open Banking Insights"
                             subheading="Your entire financial assests at a single intelligent dashboard."
                         />
                         <Row>
